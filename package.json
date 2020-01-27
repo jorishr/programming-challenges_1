@@ -1,0 +1,11 @@
+{
+  "name": "toy-problems",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Joris Raymaekers <joris@jorisr.com> (jorisr.com)",
+  "license": "ISC"
+}
