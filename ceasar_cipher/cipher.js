@@ -37,6 +37,49 @@ function encrypt(str, decrypt = false, x = 2){
             strArr[i] = alphabet[previousIndex];
         }
     }
-    return strArr.toString().split(',').join('');
+    return strArr.join('');
 }
-module.exports = encrypt;
+/**
+ * The above solution works but is not very efficient. A better approach would
+ * be to make use of character codes. That way there is no need to look up the
+ * index in the alphabet through a loop.
+ * 
+ * - split the str into arr of single char strings
+ * - map that arr of strings to arr of strings created by finding the next
+ * character code index: 
+ * The formula (i + x % 26) can be used whereby i = the original char code of
+ * the str (charCodeAt() method)
+ * To create the new string use the String constructor and the fromCharCode()
+ * method.
+ * - join the mapped array into a string 
+ */
+function encryptBetter(str, val){
+    return str
+        .split('')  //into arr of strings
+        .map(str => {
+            if(val < 0){
+                return String.fromCharCode(str.charCodeAt() + 26 + val % 26);
+            } else {
+                return String.fromCharCode(str.charCodeAt() + val % 26);
+            }
+        })
+        .join('');
+}
+function decryptBetter(str, val){
+    return str
+        .split('')
+        .map(str => {
+            if(val < 0){
+                return String.fromCharCode(str.charCodeAt() - 26 - val % 26);
+
+            } else {
+                return String.fromCharCode(str.charCodeAt() - val % 26);
+            }
+        })
+        .join('')
+}
+module.exports = {
+    encrypt,
+    encryptBetter,
+    decryptBetter
+}
