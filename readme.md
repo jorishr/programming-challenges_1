@@ -1,2 +1,2 @@
-# Test Driven Development with Jest
-- basic Javascript toy problems with Jest unit testing
+# Programming challenges I
+Various programming and algorithm problems tackled with Javascript and tested with Jest unit tests.
