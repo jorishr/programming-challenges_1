@@ -28,7 +28,7 @@
  * 
  * If a given arr position is not zero and its leftMax and rightMax are have
  * bigger values, the amount of water that can be stored is:
- * min(leftMax,rigthMax) - arr[i], add to capacity 
+ * min(leftMax,rightMax) - arr[i], add to capacity 
  * 
  * Loop over the arr:
  * - findLeftMax

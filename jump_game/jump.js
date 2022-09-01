@@ -33,7 +33,7 @@ function canJumptoEndSimple(arr){
 /**
  * The above is simplified version of the jump game whereby each value 
  * represents the exact number of steps you can jump. But what if that value is
- * the maximumum of steps you can take? Thus if arr[0] = 2 you can take 1 step
+ * the maximum of steps you can take? Thus if arr[0] = 2 you can take 1 step
  * or 2 steps.
  * 
  * [2,3,1,4]

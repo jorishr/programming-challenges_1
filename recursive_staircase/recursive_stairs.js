@@ -28,7 +28,7 @@
  *  [[0,2], [2,4]]              //two steps + two steps
  * ]
  * 
- * This pattern will continue untill num_ways(n) = num_ways(n - 1) + num_ways(n - 2)
+ * This pattern will continue until num_ways(n) = num_ways(n - 1) + num_ways(n - 2)
  */
 function numWays(steps){
     if(steps === 0 || steps === 1) return 1;
@@ -43,7 +43,7 @@ console.log(numWays(20))
 //console.log(numWays(100)) -> takes too long
 
 /**
- * This is very much like the fibonacci sequence withe the potential memory 
+ * This is very much like the Fibonacci sequence withe the potential memory 
  * requirement problem: the recursion tree will become very big for relatively
  * small numbers and many calculations are duplicates.
  * 
@@ -89,8 +89,8 @@ console.log(numWaysBottomUp(20));
 console.log(numWaysBottomUp(100));
 
 /**
- * The bottum up approach is faster than the recursive approach but still 
- * requires an array of the size of n. You can avoid that memory usage by onlu
+ * The bottom up approach is faster than the recursive approach but still 
+ * requires an array of the size of n. You can avoid that memory usage by only
  * storing the previous two numWays while updating those values in each 
  * iteration of the loop. * 
  */

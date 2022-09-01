@@ -9,7 +9,7 @@
  * How many possible unique paths are there? 
  * 
  * LOGIC
- * If n or m is 1, there is only one path: a straigth line move to the right
+ * If n or m is 1, there is only one path: a straight line move to the right
  * or down. Use recursion to get to that baseline scenario and add up all the
  * numbers for going down and right.
  * */

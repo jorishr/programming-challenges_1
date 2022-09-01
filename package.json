@@ -6,6 +6,6 @@
   "scripts": {
     "test": "jest"
   },
-  "author": "Joris Raymaekers <joris@jorisr.com> (jorisr.com)",
+  "author": "Joris Raymaekers <joris@liondigits.com> (liondigits.com)",
   "license": "ISC"
 }

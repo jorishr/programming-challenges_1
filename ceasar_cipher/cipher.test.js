@@ -2,8 +2,8 @@ const encrypt = require('./cipher').encrypt;
 const encryptBetter = require('./cipher').encryptBetter;
 const decryptBetter = require('./cipher').decryptBetter;
 
-describe('Encrypt/Decrypt a string using Ceasar Cipher', () => {
-    test('Encrypt by shifting letter x posiitions in alphabet', () => {
+describe('Encrypt/Decrypt a string using Caesar Cipher', () => {
+    test('Encrypt by shifting letter x positions in alphabet', () => {
         expect(encrypt('aaaa')).toBe('cccc');
         expect(encrypt('aaaa', false, 30)).toBe('eeee');
         expect(encrypt('aaaa', false, -1)).toBe('zzzz');

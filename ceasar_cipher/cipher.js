@@ -1,6 +1,6 @@
 /**
  * #############
- * CEASAR CIPHER
+ * CAESAR CIPHER
  * #############
  * It is a type of substitution cipher in which each letter in the plaintext
  * is replaced by a letter some fixed number of positions down the alphabet.
@@ -8,7 +8,7 @@
  * Example: 'abc' -> 'cde' or i + 2 
  * The general formula becomes: i + x % 26 because the array of characters is
  * used as a rotational array whereby the last index + x can be found by 
- * countinuing the count at arr[0].  
+ * continuing the count at arr[0].  
  * 
  * - convert str to arr
  * - Find the index of the letter in the alphabet array.
